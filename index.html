@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Java Script</h1>
+	
+	First Name: <input type="number" id="myText1" value="Mickey">
+	First Name: <input type="number" id="myText2" value="Mickey">
+	
+<p id="demo"><button onblur="myFunction()">Try it</button></p>
+<style>
+	#head{
+		display: none;
+		color: blue;
+	}
+</style>
+<h1 id="head">Hello</h1>
+
+	
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myText1").value;
+  var y = document.getElementById("myText2").value;
+  var z = parseFloat (x) + parseFloat(y);
+  document.getElementById("demo").innerHTML = z;
+  if (z==46) {
+  	document.getElementById('head').style.display="block";
+  }else{
+  	document.write("NOT OK");
+  }
+}
+</script>
+</body>
+
+
+	
+	
+	
+	
+</html>
