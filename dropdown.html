@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drop Down</title>
+</head>
+<body>
+  <style>
+    .dropcontent{
+      
+      display: none;
+    }
+    .dropcontent > a{
+      color: white;
+    }
+    .dropbtn{
+      padding: 10px 30px;
+
+    }
+    .dropdown:hover .dropcontent{
+      display: block;
+      display: flex;
+      flex-direction: column;
+      background: blue;
+      width: 10%;
+    }
+  </style>
+<div class="dropdown">
+  <button class="dropbtn">Drop Me</button>
+  <div class="dropcontent">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+    
+  </div>
+  
+</div>
+</body>
+</html>
