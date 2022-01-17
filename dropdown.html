@@ -4,6 +4,7 @@
 <title>Drop Down</title>
 </head>
 <body>
+  <marquee behavior="" direction="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus dolor omnis placeat possimus cumque delectus provident dignissimos, voluptatem pariatur et earum esse officiis eaque rem voluptatum praesentium vitae perspiciatis aut?</marquee>
   <style>
     .dropcontent{
       
@@ -23,7 +24,9 @@
       background: blue;
       width: 10%;
     }
+  
   </style>
+
 <div class="dropdown">
   <button class="dropbtn">Drop Me</button>
   <div class="dropcontent">
@@ -34,5 +37,84 @@
   </div>
   
 </div>
+
+<h1>Drop Down Two</h1>
+
+<style>
+  .main{
+    width: 10%;
+    background-color: yellow;
+  }
+.dropdow{
+  display: none;
+}
+.main:hover .dropdow{
+  display: block;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+.dropdow {
+ 
+}
+</style>
+
+
+<div class="main">
+<button class="btn">Drop me</button>
+<div class="dropdow">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 2</a>
+
+</div>
+</div>
+
+<br><br><br>
+<style>
+  .MyDiv{
+    height: 200px;
+    width: 300px;
+    background-color: black;
+    animation: myanimate 5s infinite;
+  }
+  @keyframes myanimate {
+    0%{
+      background-color: yellow;
+      
+    }
+    25%{
+      background-color: turquoise;
+      margin-left: 50%;
+    }50%{
+      background-color: green;
+      margin-left: 50%;
+      margin-top: 20%;
+      border-radius: 50%;
+      transform: rotate(90deg);
+    }
+    75%{
+      background-color: gray;
+      margin-left: 10%;
+      margin-top: 20%;
+      
+    }
+    100%{
+      background-color: violet;
+    }
+
+    
+  }
+</style>
+<div class="MyDiv">
+
+</div>
+
+
+
+
+
 </body>
 </html>
