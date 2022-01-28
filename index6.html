@@ -10,12 +10,16 @@ body{
 	background: url("images/image2.jpg");
 	background-size: cover;
 }
+:root{
+	--bgcolor-main: #682800;
+	--btn-padding: 20px;
+}
 </style>
 <body>
 	<style>	
 nav > ul{
 /*height: 100px;*/
-padding: 10px;
+padding: var(--btn-padding);
 display: flex;
 /*background: blue;*/
 border: 1px dotted black;
@@ -31,7 +35,7 @@ nav > ul > li{
 	color: white;
 }
 nav > ul > li:hover{
-background: white;
+background: var(--bgcolor-main);
 border: 1px solid black;
 color: black;
 cursor: pointer;
