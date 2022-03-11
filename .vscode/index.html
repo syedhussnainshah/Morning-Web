@@ -32,6 +32,20 @@
             resinput.type = "text";
             resinput.classList.add("SeconInput");
             resinput.value = TodoInput.value;
+            resinput.setAttribute('readonly', 'readonly');
+            let editBtn = document.createElement("button");
+            editBtn.innerHTML = "Edit";
+            li.appendChild(editBtn);
+            editBtn.addEventListener('click', () => {
+                if (editBtn.innerHTML == 'Edit') {
+                    resinput.removeAttribute('readonly', 'readonly');
+                    editBtn.innerHTML = "Save";
+                } else {
+                    resinput.setAttribute('readonly', 'readonly');
+                    editBtn.innerHTML = "Edit";
+
+                }
+            });
             console.log(resinput);
             li.appendChild(resinput);
             unorder.appendChild(li);
